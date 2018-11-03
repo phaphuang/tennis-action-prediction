@@ -23,7 +23,7 @@ sys.path.append(parent_dir)
 from video_prediction import datasets, models
 from video_prediction.utils import ffmpeg_gif, tf_utils
 
-os.environ["CUDA_VISIBLE_DEVICES"] = ""
+#os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
 def main():
     parser = argparse.ArgumentParser()
