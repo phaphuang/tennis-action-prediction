@@ -1,3 +1,5 @@
 tennis.zip
 video_prediction_archived.zip
 data/tennis
+*/*/__pycache__
+*/__pycache__
