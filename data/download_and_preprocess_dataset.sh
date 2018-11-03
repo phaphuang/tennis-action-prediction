@@ -10,9 +10,8 @@ fi
 if [ $1 = "tennis" ]; then
   TARGET_DIR=./data/tennis
   ZIP_NAME=tennis
-  unzip ${TARGET_DIR}/raw/${ZIP_FNAME} -d ${TARGET_DIR}/raw/${ACTION}
+  unzip ${TARGET_DIR}/raw/${ZIP_FNAME} -d ${TARGET_DIR}/raw
   python video_prediction/datasets/tennis_dataset.py ${TARGET_DIR}
-  rm -rf ${TARGET_DIR}/raw
 else
   echo "Invalid dataset name: '$1' (choose from 'tennis')" >&2
   exit 1
