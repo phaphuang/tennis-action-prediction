@@ -10,7 +10,6 @@ fi
 if [ $1 = "tennis" ]; then
   TARGET_DIR=./data/tennis
   ZIP_NAME=tennis
-  mkdir ${TARGET_DIR}
   unzip ${ZIP_FNAME}.zip -d ${TARGET_DIR}/raw
   python video_prediction/datasets/tennis_dataset.py ${TARGET_DIR}
 else
