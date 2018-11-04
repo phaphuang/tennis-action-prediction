@@ -11,7 +11,7 @@ if [ $1 = "tennis" ]; then
   TARGET_DIR=./data/tennis
   mkdir -p ${TARGET_DIR}
   mkdir -p ${TARGET_DIR}/raw
-  ZIP_NAME=tennis.zip
+  ZIP_FNAME=tennis.zip
   unzip ./data/${ZIP_FNAME} -d ${TARGET_DIR}/raw
   python video_prediction/datasets/tennis_dataset.py ${TARGET_DIR}/raw ${TARGET_DIR}
 else
